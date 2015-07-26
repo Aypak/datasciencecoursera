@@ -47,3 +47,6 @@ levels(data$activity)<-activity_labels[,2]
 
 #arrange by subject
 data<-arrange(data,subject)
+
+#write to text file
+write.table(data,"tidy_data.txt,row.name=FALSE")
